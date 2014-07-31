@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect, HttpResponse, Http404
+from django.http import Http404
 
-from gradebook.models import Students, Enrollments, Grades, Classes
+from gradebook.models import Enrollments, Classes
 
 
 def index(request):
@@ -10,9 +10,9 @@ def index(request):
     return render(request, 'gradebook/index.html', context)
 
 
-def detail(request, enrollmentid):
+def detail(request, enrollment_id):
     try:
-        enrollment = Enrollments.objects.get(pk=enrollmentid)
+        enrollment = Enrollments.objects.get(pk=enrollment_id)
     except Enrollments.DoesNotExist:
         raise Http404
     return render(request, 'gradebook/detail.html', {'enrollment': enrollment})
