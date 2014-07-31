@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Hello</h1>
+{% if get_student_id %}
+<ul>
+    {% for student_id in get_student_id %}
+</ul>
+<ul>
+    <li><a href="/gradebook/{{ student_id }}/">{{ student_id }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>No students are available.</p>
+{% endif %}
+</body>
+</html>
