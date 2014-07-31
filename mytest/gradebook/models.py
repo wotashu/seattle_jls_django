@@ -22,13 +22,13 @@ class AcademicQuarters(models.Model):
 
 
 class AcademicYears(models.Model):
-    academic_year_id = models.IntegerField(db_column='AcademicYearID', primary_key=True)  # Field name made lowercase.
+    academic_year_id = models.IntegerField(db_column='AcademicYearID', primary_key=True)
     academic_year_title = models.CharField(db_column='AcademicYearTitle', max_length=45,
-                                           blank=True)  # Field name made lowercase.
+                                           blank=True)
     academic_year_start_date = models.DateField(db_column='AcademicYearStartDate', blank=True,
-                                                null=True)  # Field name made lowercase.
+                                                null=True)
     academic_year_end_date = models.DateField(db_column='AcademicYearEndDate', blank=True,
-                                              null=True)  # Field name made lowercase.
+                                              null=True)
 
     class Meta:
         managed = False
@@ -39,14 +39,14 @@ class AcademicYears(models.Model):
 
 
 class Addresses(models.Model):
-    address_id = models.IntegerField(db_column='AddressID', primary_key=True)  # Field name made lowercase.
+    address_id = models.IntegerField(db_column='AddressID', primary_key=True)
     address_street_1 = models.CharField(db_column='AddressStreet1', max_length=45,
                                         blank=True)  # Field name made lowercase.
     address_street_2 = models.CharField(db_column='AddressStreet2', max_length=45,
                                         blank=True)  # Field name made lowercase.
     address_city = models.CharField(db_column='AddressCity', max_length=45, blank=True)  # Field name made lowercase.
-    addresss_state = models.CharField(db_column='AddressSstate', max_length=45,
-                                      blank=True)  # Field name made lowercase.
+    address_state = models.CharField(db_column='AddressState', max_length=45,
+                                     blank=True)  # Field name made lowercase.
     address_zip = models.CharField(db_column='AddressZIP', max_length=45, blank=True)  # Field name made lowercase.
     address_country = models.CharField(db_column='AddressCountry', max_length=45,
                                        blank=True)  # Field name made lowercase.
@@ -109,7 +109,7 @@ class Students(models.Model):
     student_first_name = models.CharField(db_column='StudentFirstName', max_length=225)  # Field name made lowercase.
     student_alternative_name = models.CharField(db_column='StudentAlternativeName', max_length=45,
                                                 blank=True)  # Field name made lowercase.
-    student_birth_date = models.DateField(db_column='StudentBirthdate', blank=True,
+    student_birth_date = models.DateField(db_column='StudentBirthDate', blank=True,
                                           null=True)  # Field name made lowercase.
     student_email = models.CharField(db_column='StudentEmail', max_length=225, blank=True)  # Field name made lowercase.
     student_phone = models.CharField(db_column='StudentPhone', max_length=225, blank=True)  # Field name made lowercase.
@@ -128,9 +128,9 @@ class Students(models.Model):
 
 class Parents(models.Model):
     parent_id = models.IntegerField(db_column='ParentID', primary_key=True)  # Field name made lowercase.
-    parent_first_name = models.CharField(db_column='ParentFirstname', max_length=45,
+    parent_first_name = models.CharField(db_column='ParentFirstName', max_length=45,
                                          blank=True)  # Field name made lowercase.
-    parent_last_name = models.CharField(db_column='ParentLastname', max_length=45,
+    parent_last_name = models.CharField(db_column='ParentLastName', max_length=45,
                                         blank=True)  # Field name made lowercase.
     parent_relationship = models.CharField(db_column='ParentRelationship', max_length=45,
                                            blank=True)  # Field name made lowercase.
