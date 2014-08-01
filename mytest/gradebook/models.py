@@ -123,6 +123,7 @@ class Students(models.Model):
         db_table = 'Students'
 
     def __unicode__(self):
+        #return self.student_id
         return u'%s, %s' % (self.student_last_name, self.student_first_name)
 
 

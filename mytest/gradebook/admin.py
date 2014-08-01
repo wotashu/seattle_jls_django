@@ -69,7 +69,7 @@ class EnrollmentsAdmin(admin.ModelAdmin):
     ]
     inlines = [GradesInline]
     list_display = ('students_student_id', 'classes_class_id', 'drop_status', 'notes')
-    search_fields = ['notes']
+    search_fields = ['students_student_id__student_last_name', 'students_student_id__student_first_name', 'notes']
 
 
 admin.site.register(AcademicYears, AcademicYearsAdmin)
