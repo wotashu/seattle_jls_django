@@ -11,7 +11,7 @@
     {% for student_id in get_student_id %}
 </ul>
 <ul>
-    <li><a href="/gradebook/{{ student_id }}/">{{ student_id }}</a></li>
+    <li><a href="/gradebook/students/{{ student_id }}/">{{ student_id }}</a></li>
     {% endfor %}
 </ul>
 {% else %}

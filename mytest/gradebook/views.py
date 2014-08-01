@@ -26,8 +26,15 @@ def list_classes(request):
 
 def homeboy(request):
     get_student_id = Students.objects.all()
-    get_teacher_id = Teachers.objects.all()
-    context_1 = {'get_student_id': get_student_id}
-    context_2 = {'get_teacher_id': get_teacher_id}
-    return render(request, 'gradebook/homeboy.html', context_1)
+    context = {'get_student_id': get_student_id}
+    return render(request, 'gradebook/homeboy.html', context)
+
+
+def students(request, student_id):
+    try:
+        student = Students.objects.get(pk=student_id)
+    except Students.DoesNotExist:
+        raise Http404
+    context = {'student': student}
+    return render(request, 'gradebook/student_id.html', context)
 # Create your views here.
