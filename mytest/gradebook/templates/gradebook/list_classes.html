@@ -1,0 +1,9 @@
+{% if get_class_id %}
+    <ul>
+    {% for class_id in get_class_id %}
+        <li>{{ class_id.academic_years_academic_year_id }}:<a href="/gradebook/class_list/{{ class_id }}/">{{ class_id }}</a>{{ class_id.teachers_teacher_id }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No classes are available.</p>
+{% endif %}

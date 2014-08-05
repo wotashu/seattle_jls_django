@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>{% if get_enrollment_list %}
+<ul>
+    {% for enrollment_id in get_enrollment_list %}
+</ul>
+<ul>
+    <li><a href="/gradebook/{{ enrollment_id }}/">{{ enrollment_id }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>No students are available.</p>
+{% endif %}
+</body>
+</html>

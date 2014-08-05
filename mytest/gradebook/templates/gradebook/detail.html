@@ -1,0 +1,7 @@
+<h1>{{ enrollment }}</h1>
+<h2>{{ enrollment.students_student_id.student_last_name }}</h2>
+<ul>
+{% for student_last_name in enrollment.students_student_id_set.select_related %}
+    <li>Hello {{ student_last_name }}</li>
+{% endfor %}
+</ul>
