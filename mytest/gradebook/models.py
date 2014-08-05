@@ -145,7 +145,7 @@ class Parents(models.Model):
         db_table = 'Parents'
 
     def __unicode__(self):
-        return u'%s, %s' % (self.parent_last_name, self.parent_first_name)
+        return u'%s, %s' % (self.parent_last_name, self.parent_first_name) or u''
 
 
 class Families(models.Model):
@@ -172,7 +172,7 @@ class Teachers(models.Model):
         db_table = 'Teachers'
 
     def __unicode__(self):
-        return u'%s, %s' % (self.teacher_last_name, self.teacher_first_name)
+        return u'%s, %s' % (self.teacher_last_name, self.teacher_first_name) or u''
 
 
 class Curriculums(models.Model):
