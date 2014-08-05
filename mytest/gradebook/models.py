@@ -262,7 +262,7 @@ class Enrollments(models.Model):
         db_table = 'Enrollments'
 
     def __unicode__(self):
-        return unicode(self.enrollment_id) or u''
+        return self.enrollment_id
 
 
 class Grades(models.Model):
