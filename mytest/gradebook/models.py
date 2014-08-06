@@ -262,7 +262,7 @@ class Enrollments(models.Model):
         db_table = 'Enrollments'
 
     def __str__(self):
-        return self.enrollment_id
+        return unicode(self.enrollment_id)
 
 
 class Grades(models.Model):
