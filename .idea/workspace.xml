@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90141fe7-502f-498d-800e-40af504bbaef" name="Default" comment="ignore .idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/models.py" afterPath="$PROJECT_DIR$/mytest/gradebook/models.py" />
+    <list default="true" id="90141fe7-502f-498d-800e-40af504bbaef" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/chooser-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/chooser_stacked-bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tool-left.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tool-left_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tool-right.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tool-right_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tooltag-add.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tooltag-add_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tooltag-arrowright.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/static/admin/img/tooltag-arrowright_over.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/changelist-bg.gif" afterPath="$PROJECT_DIR$/mytest/static/admin/img/changelist-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/default-bg-reverse.gif" afterPath="$PROJECT_DIR$/mytest/static/admin/img/default-bg-reverse.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/default-bg.gif" afterPath="$PROJECT_DIR$/mytest/static/admin/img/default-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/icon_searchbox.png" afterPath="$PROJECT_DIR$/mytest/static/admin/img/icon_searchbox.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/inline-delete-8bit.png" afterPath="$PROJECT_DIR$/mytest/static/admin/img/inline-delete-8bit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/inline-delete.png" afterPath="$PROJECT_DIR$/mytest/static/admin/img/inline-delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/inline-restore-8bit.png" afterPath="$PROJECT_DIR$/mytest/static/admin/img/inline-restore-8bit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/inline-restore.png" afterPath="$PROJECT_DIR$/mytest/static/admin/img/inline-restore.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/inline-splitter-bg.gif" afterPath="$PROJECT_DIR$/mytest/static/admin/img/inline-splitter-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/nav-bg-reverse.gif" afterPath="$PROJECT_DIR$/mytest/static/admin/img/nav-bg-reverse.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/img/nav-bg.gif" afterPath="$PROJECT_DIR$/mytest/static/admin/img/nav-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/SelectBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/SelectFilter2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/access.log" afterPath="$PROJECT_DIR$/mytest/access.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/actions.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/actions.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/css/base.css" afterPath="$PROJECT_DIR$/mytest/static/admin/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/collapse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/core.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/error.log" afterPath="$PROJECT_DIR$/mytest/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/css/forms.css" afterPath="$PROJECT_DIR$/mytest/static/admin/css/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/inlines.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/nginx.conf" afterPath="$PROJECT_DIR$/mytest/nginx.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/prepopulate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/prepopulate.min.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/prepopulate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/mytest/static/admin/js/urlify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/static/admin/css/widgets.css" afterPath="$PROJECT_DIR$/mytest/static/admin/css/widgets.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seattle_jls_django.iws" />
@@ -35,8 +73,8 @@
           <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6593407" vertical-offset="3888" max-vertical-offset="5166">
-                  <caret line="236" column="40" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
+                <state vertical-scroll-proportion="0.7912088" vertical-offset="3888" max-vertical-offset="5166">
+                  <caret line="240" column="26" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -79,7 +117,7 @@
           <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.41197184" vertical-offset="270" max-vertical-offset="1620">
+                <state vertical-scroll-proportion="-0.44366196" vertical-offset="756" max-vertical-offset="1620">
                   <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
@@ -598,7 +636,11 @@
       <created>1407357202132</created>
       <updated>1407357202132</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix Enrollments model string converstion">
+      <created>1407360024852</created>
+      <updated>1407360024852</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -676,7 +718,8 @@
     <MESSAGE value="django install on win&#10;" />
     <MESSAGE value="sync to django 1.7" />
     <MESSAGE value="try python3&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="try python3&#10;" />
+    <MESSAGE value="fix Enrollments model string converstion" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Enrollments model string converstion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1081,7 +1124,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41197184" vertical-offset="270" max-vertical-offset="1620">
+        <state vertical-scroll-proportion="-0.44366196" vertical-offset="756" max-vertical-offset="1620">
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -1091,8 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6593407" vertical-offset="3888" max-vertical-offset="5166">
-          <caret line="236" column="40" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.7912088" vertical-offset="3888" max-vertical-offset="5166">
+          <caret line="240" column="26" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
           <folding />
         </state>
       </provider>
