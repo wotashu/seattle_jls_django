@@ -1,4 +1,4 @@
 bind = "127.0.0.1:8888"
 logfile = "/home/webapp/gunicorn.log"
-workers = 7
+workers = 3
 

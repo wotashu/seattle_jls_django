@@ -145,3 +145,7 @@
 127.0.0.1 - - [06/Aug/2014:15:59:32 -0700] "GET / HTTP/1.1" 502 181 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
 127.0.0.1 - - [06/Aug/2014:16:01:15 -0700] "GET / HTTP/1.1" 502 181 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
 127.0.0.1 - - [06/Aug/2014:16:07:03 -0700] "GET / HTTP/1.1" 502 181 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:16:27:01 -0700] "GET /admin/ HTTP/1.1" 502 181 "http://0.0.0.0:8080/admin/gradebook/assignmenttypes/21/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:16:27:01 -0700] "GET /favicon.ico HTTP/1.1" 502 181 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:16:27:02 -0700] "GET /favicon.ico HTTP/1.1" 502 181 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:16:28:06 -0700] "GET /admin/ HTTP/1.1" 502 181 "http://0.0.0.0:8080/admin/gradebook/assignmenttypes/21/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
