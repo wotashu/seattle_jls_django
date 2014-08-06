@@ -15,7 +15,8 @@ class AcademicYearsAdmin(admin.ModelAdmin):
 
 
 class AcademicQuartersAdmin(admin.ModelAdmin):
-    fields = ['academic_quarter_id', 'academic_quarter_name', 'academic_quarter_start_date', 'academic_quarter_end_date']
+    fields = ['academic_quarter_id', 'academic_quarter_name', 'academic_quarter_start_date',
+              'academic_quarter_end_date']
 
 
 class EnrollmentsInline(admin.TabularInline):
@@ -26,7 +27,7 @@ class EnrollmentsInline(admin.TabularInline):
 
 class StudentsAdmin(admin.ModelAdmin):
     fields = ['student_id', 'student_last_name', 'student_first_name', 'student_alternative_name', 'student_birth_date']
-    list_display = ('student_id', 'student_last_name', 'student_first_name')
+    list_display = ('student_id', 'student_last_name', 'student_first_name', 'student_birth_date')
     search_fields = ['student_id', 'student_last_name', 'student_first_name']
     inlines = [EnrollmentsInline]
 

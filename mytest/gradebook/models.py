@@ -17,7 +17,7 @@ class AcademicQuarters(models.Model):
         managed = False
         db_table = 'AcademicQuarters'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.academic_quarter_name
 
 
@@ -34,7 +34,7 @@ class AcademicYears(models.Model):
         managed = False
         db_table = 'AcademicYears'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.academic_year_title
 
 
@@ -55,7 +55,7 @@ class Addresses(models.Model):
         managed = False
         db_table = 'Addresses'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.address_id
 
 
@@ -74,7 +74,7 @@ class EmergencyContacts(models.Model):
         managed = False
         db_table = 'EmergencyContacts'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.emergencyid
 
 
@@ -87,7 +87,7 @@ class AssignmentTypes(models.Model):
         managed = False
         db_table = 'AssignmentTypes'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.assignment_title
 
 
@@ -99,7 +99,7 @@ class Courses(models.Model):
         managed = False
         db_table = 'Courses'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.course_level
 
 
@@ -122,9 +122,9 @@ class Students(models.Model):
         managed = False
         db_table = 'Students'
 
-    def __unicode__(self):
-        #return self.student_id
-        return u'%s, %s' % (self.student_last_name, self.student_first_name)
+    def __str__(self):
+        return unicode(self.student_id) or u''
+        #return u'%s, %s' % (self.student_last_name, self.student_first_name)
 
 
 class Parents(models.Model):
@@ -144,7 +144,7 @@ class Parents(models.Model):
         managed = False
         db_table = 'Parents'
 
-    def __unicode__(self):
+    def __str__(self):
         return u'%s, %s' % (self.parent_last_name, self.parent_first_name)
 
 
@@ -171,7 +171,7 @@ class Teachers(models.Model):
         managed = False
         db_table = 'Teachers'
 
-    def __unicode__(self):
+    def __str__(self):
         return u'%s, %s' % (self.teacher_last_name, self.teacher_first_name)
 
 
@@ -188,7 +188,7 @@ class Curriculums(models.Model):
         managed = False
         db_table = 'Curriculums'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.curriculum_id
 
 
@@ -202,7 +202,7 @@ class Rooms(models.Model):
         managed = False
         db_table = 'Rooms'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.room_id
 
 
@@ -216,7 +216,7 @@ class Schedules(models.Model):
         managed = False
         db_table = 'Schedules'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.schedule_id
 
 
@@ -240,7 +240,7 @@ class Classes(models.Model):
         managed = False
         db_table = 'Classes'
 
-    def __unicode__(self):
+    def __str__(self):
         return u'(%s %s) %s %s: %s ' % (
             self.academic_years_academic_year_id, self.academic_quarters_academic_quarter_id, self.courses_course_id,
             self.class_section, self.teachers_teacher_id)
@@ -261,7 +261,7 @@ class Enrollments(models.Model):
         managed = False
         db_table = 'Enrollments'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.enrollment_id
 
 
@@ -277,6 +277,5 @@ class Grades(models.Model):
         managed = False
         db_table = 'Grades'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.grade_score
-

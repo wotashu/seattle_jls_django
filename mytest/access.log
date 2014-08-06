@@ -44,3 +44,7 @@
 127.0.0.1 - - [05/Aug/2014:16:24:45 -0700] "GET /gradebook/ HTTP/1.1" 500 148901 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
 127.0.0.1 - - [05/Aug/2014:16:24:55 -0700] "GET /gradebook/1 HTTP/1.1" 301 5 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
 127.0.0.1 - - [05/Aug/2014:16:24:55 -0700] "GET /gradebook/1/ HTTP/1.1" 500 115225 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:11:42:50 -0700] "GET /icons/ubuntu-logo.png HTTP/1.1" 502 181 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:11:42:51 -0700] "GET /favicon.ico HTTP/1.1" 502 181 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:11:45:06 -0700] "GET /icons/ubuntu-logo.png HTTP/1.1" 502 181 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [06/Aug/2014:11:47:11 -0700] "GET /icons/ubuntu-logo.png HTTP/1.1" 502 181 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
