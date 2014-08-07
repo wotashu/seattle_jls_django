@@ -60,8 +60,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'jls_test_django',
-        'USER': 'root',
-        'PASSWORD': 'NKB1348-2',
+        'USER': 'jls_grader',
+        'PASSWORD': 'nNPwSfusEhPhVye3',
         'HOST': 'localhost',
     }
 }
