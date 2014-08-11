@@ -1,12 +1,12 @@
 from django.contrib import admin
-from gradebook.models import AcademicYears
-from gradebook.models import AcademicQuarters
-from gradebook.models import Students
-from gradebook.models import Teachers
-from gradebook.models import Enrollments
-from gradebook.models import Grades
-from gradebook.models import AssignmentTypes
-from gradebook.models import Classes
+from gradebook.models import AcademicYear
+from gradebook.models import AcademicQuarter
+from gradebook.models import Student
+from gradebook.models import Teacher
+from gradebook.models import Enrollment
+from gradebook.models import Grade
+from gradebook.models import AssignmentType
+from gradebook.models import Class
 
 
 class AcademicYearsAdmin(admin.ModelAdmin):
@@ -20,7 +20,7 @@ class AcademicQuartersAdmin(admin.ModelAdmin):
 
 
 class EnrollmentsInline(admin.TabularInline):
-    model = Enrollments
+    model = Enrollment
     extra = 0
     fields = ['classes_class_id', 'drop_status', 'attendance_total', 'attendance_score']
 
@@ -57,7 +57,7 @@ class ClassesAdmin(admin.ModelAdmin):
 
 
 class GradesInline(admin.TabularInline):
-    model = Grades
+    model = Grade
     extra = 0
     fields = ['assignment_types_assignment_type_id', 'grade_score']
 
@@ -73,12 +73,12 @@ class EnrollmentsAdmin(admin.ModelAdmin):
     search_fields = ['students_student_id__student_last_name', 'students_student_id__student_first_name', 'notes']
 
 
-admin.site.register(AcademicYears, AcademicYearsAdmin)
-admin.site.register(AcademicQuarters, AcademicQuartersAdmin)
-admin.site.register(Students, StudentsAdmin)
-admin.site.register(Teachers, TeachersAdmin)
-admin.site.register(Grades, GradesAdmin)
-admin.site.register(AssignmentTypes, AssignmentTypesAdmin)
-admin.site.register(Enrollments, EnrollmentsAdmin)
-admin.site.register(Classes, ClassesAdmin)
+admin.site.register(AcademicYear, AcademicYearsAdmin)
+admin.site.register(AcademicQuarter, AcademicQuartersAdmin)
+admin.site.register(Student, StudentsAdmin)
+admin.site.register(Teacher, TeachersAdmin)
+admin.site.register(Grade, GradesAdmin)
+admin.site.register(AssignmentType, AssignmentTypesAdmin)
+admin.site.register(Enrollment, EnrollmentsAdmin)
+admin.site.register(Class, ClassesAdmin)
 # Register your models here.
