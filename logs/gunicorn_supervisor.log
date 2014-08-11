@@ -3,3 +3,28 @@ Starting seattle_jls_django as nikkeibunko2
 Starting seattle_jls_django as nikkeibunko2
 Starting seattle_jls_django as nikkeibunko2
 Exception _mysql_exceptions.ProgrammingError: (2014, "Commands out of sync; you can't run this command now") in <bound method Cursor.__del__ of <MySQLdb.cursors.Cursor object at 0xb5143dac>> ignored
+Starting seattle_jls_django as nikkeibunko2
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned

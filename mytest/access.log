@@ -336,3 +336,8 @@
 127.0.0.1 - - [07/Aug/2014:16:06:06 -0700] "GET /admin/gradebook/classes/ HTTP/1.1" 200 3285 "http://localhost:8080/admin/gradebook/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
 127.0.0.1 - - [07/Aug/2014:16:06:07 -0700] "GET /admin/jsi18n/ HTTP/1.1" 200 2384 "http://localhost:8080/admin/gradebook/classes/" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
 127.0.0.1 - - [07/Aug/2014:16:06:08 -0700] "GET /static/admin/img/tooltag-add.png HTTP/1.1" 404 151 "http://localhost:8080/static/admin/css/base.css" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [09/Aug/2014:15:34:17 -0700] "GET /admin HTTP/1.1" 404 151 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [09/Aug/2014:15:34:18 -0700] "GET /favicon.ico HTTP/1.1" 404 151 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [09/Aug/2014:15:34:18 -0700] "GET /favicon.ico HTTP/1.1" 404 151 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [09/Aug/2014:15:34:19 -0700] "GET /admin HTTP/1.1" 404 151 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
+127.0.0.1 - - [09/Aug/2014:15:35:37 -0700] "GET / HTTP/1.1" 404 151 "-" "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0"
