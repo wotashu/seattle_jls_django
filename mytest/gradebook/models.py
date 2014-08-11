@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class AcademicQuarters(models.Model):
+class AcademicQuarter(models.Model):
     academic_quarter_id = models.IntegerField(db_column='AcademicQuarterID',
                                               primary_key=True)  # Field name made lowercase.
     academic_quarter_name = models.CharField(db_column='AcademicQuarterName', max_length=45,
@@ -21,7 +21,7 @@ class AcademicQuarters(models.Model):
         return self.academic_quarter_name
 
 
-class AcademicYears(models.Model):
+class AcademicYear(models.Model):
     academic_year_id = models.IntegerField(db_column='AcademicYearID', primary_key=True)
     academic_year_title = models.CharField(db_column='AcademicYearTitle', max_length=45,
                                            blank=True)
@@ -38,7 +38,7 @@ class AcademicYears(models.Model):
         return self.academic_year_title
 
 
-class Addresses(models.Model):
+class Address(models.Model):
     address_id = models.IntegerField(db_column='AddressID', primary_key=True)
     address_street_1 = models.CharField(db_column='AddressStreet1', max_length=45,
                                         blank=True)  # Field name made lowercase.
@@ -54,12 +54,13 @@ class Addresses(models.Model):
     class Meta:
         managed = False
         db_table = 'Addresses'
+        verbose_name_plural = "addresses"
 
     def __str__(self):
         return self.address_id
 
 
-class EmergencyContacts(models.Model):
+class EmergencyContact(models.Model):
     emergency_id = models.IntegerField(db_column='EmergencyID', primary_key=True)  # Field name made lowercase.
     emergency_relationship = models.CharField(db_column='EmergencyRelationship',
                                               max_length=45)  # Field name made lowercase.
@@ -78,7 +79,7 @@ class EmergencyContacts(models.Model):
         return self.emergencyid
 
 
-class AssignmentTypes(models.Model):
+class AssignmentType(models.Model):
     assignment_type_id = models.IntegerField(db_column='AssignmentTypeID', primary_key=True)
     assignment_title = models.CharField(db_column='AssignmentTitle', max_length=70,
                                         blank=True)
@@ -91,7 +92,7 @@ class AssignmentTypes(models.Model):
         return self.assignment_title
 
 
-class Courses(models.Model):
+class Course(models.Model):
     course_id = models.IntegerField(db_column='CourseID', primary_key=True)  # Field name made lowercase.
     course_level = models.CharField(db_column='CourseLevel', max_length=45, blank=True)  # Field name made lowercase.
 
@@ -103,7 +104,7 @@ class Courses(models.Model):
         return self.course_level
 
 
-class Students(models.Model):
+class Student(models.Model):
     student_id = models.IntegerField(db_column='StudentID', primary_key=True)  # Field name made lowercase.
     student_last_name = models.CharField(db_column='StudentLastName', max_length=225)  # Field name made lowercase.
     student_first_name = models.CharField(db_column='StudentFirstName', max_length=225)  # Field name made lowercase.
@@ -127,7 +128,7 @@ class Students(models.Model):
         #return u'%s, %s' % (self.student_last_name, self.student_first_name)
 
 
-class Parents(models.Model):
+class Parent(models.Model):
     parent_id = models.IntegerField(db_column='ParentID', primary_key=True)  # Field name made lowercase.
     parent_first_name = models.CharField(db_column='ParentFirstName', max_length=45,
                                          blank=True)  # Field name made lowercase.
@@ -148,16 +149,17 @@ class Parents(models.Model):
         return u'%s, %s' % (self.parent_last_name, self.parent_first_name)
 
 
-class Families(models.Model):
+class Family(models.Model):
     students_student_id = models.ForeignKey('Students', db_column='Students_StudentID')  # Field name made lowercase.
     parent_parent_id = models.ForeignKey('Parents', db_column='Parent_parentID')  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'Families'
+        verbose_name_plural = "families"
 
 
-class Teachers(models.Model):
+class Teacher(models.Model):
     teacher_id = models.IntegerField(db_column='TeacherID', primary_key=True)  # Field name made lowercase.
     teacher_last_name = models.CharField(db_column='TeacherLastName', max_length=225)  # Field name made lowercase.
     teacher_first_name = models.CharField(db_column='TeacherFirstName', max_length=225,
@@ -175,7 +177,7 @@ class Teachers(models.Model):
         return u'%s, %s' % (self.teacher_last_name, self.teacher_first_name)
 
 
-class Curriculums(models.Model):
+class Curriculum(models.Model):
     curriculum_id = models.IntegerField(db_column='CurriculumID', primary_key=True)  # Field name made lowercase.
     curriculum_description = models.CharField(db_column='CurriculumDescription', max_length=45,
                                               blank=True)  # Field name made lowercase.
@@ -192,7 +194,7 @@ class Curriculums(models.Model):
         return self.curriculum_id
 
 
-class Rooms(models.Model):
+class Room(models.Model):
     room_id = models.IntegerField(db_column='RoomID', primary_key=True)  # Field name made lowercase.
     building = models.CharField(db_column='Building', max_length=225)  # Field name made lowercase.
     capacity = models.CharField(db_column='Capacity', max_length=225)  # Field name made lowercase.
@@ -206,7 +208,7 @@ class Rooms(models.Model):
         return self.room_id
 
 
-class Schedules(models.Model):
+class Schedule(models.Model):
     schedule_id = models.IntegerField(db_column='ScheduleID', primary_key=True)  # Field name made lowercase.
     day_of_the_week = models.CharField(db_column='DayOfTheWeek', max_length=225)  # Field name made lowercase.
     start_time = models.TimeField(db_column='StartTime')  # Field name made lowercase.
@@ -220,7 +222,7 @@ class Schedules(models.Model):
         return self.schedule_id
 
 
-class Classes(models.Model):
+class Class(models.Model):
     class_id = models.IntegerField(db_column='ClassID', primary_key=True)  # Field name made lowercase.
     academic_years_academic_year_id = models.ForeignKey(AcademicYears,
                                                         db_column='AcademicYears_AcademicYearID')
@@ -239,6 +241,7 @@ class Classes(models.Model):
     class Meta:
         managed = False
         db_table = 'Classes'
+        verbose_name_plural = "classes"
 
     def __str__(self):
         return u'(%s %s) %s %s: %s ' % (
@@ -246,7 +249,7 @@ class Classes(models.Model):
             self.class_section, self.teachers_teacher_id)
 
 
-class Enrollments(models.Model):
+class Enrollment(models.Model):
     enrollment_id = models.IntegerField(db_column='EnrollmentID', primary_key=True)  # Field name made lowercase.
     classes_class_id = models.ForeignKey(Classes, db_column='Classes_ClassID')  # Field name made lowercase.
     students_student_id = models.ForeignKey('Students', db_column='Students_StudentID')  # Field name made lowercase.
@@ -265,7 +268,7 @@ class Enrollments(models.Model):
         return unicode(self.enrollment_id)
 
 
-class Grades(models.Model):
+class Grade(models.Model):
     grade_id = models.IntegerField(db_column='GradeID', primary_key=True)  # Field name made lowercase.
     enrollments_enrollment_id = models.ForeignKey(Enrollments,
                                                   db_column='Enrollments_EnrollmentID')  # Field name made lowercase.
