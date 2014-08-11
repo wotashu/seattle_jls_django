@@ -28,3 +28,15 @@ supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
 supervisor: child process was not spawned
 supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
 supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /webapps/bin/gunicorn_start: EACCES
+supervisor: child process was not spawned
+Starting seattle_jls_django as webapps
+Exception _mysql_exceptions.ProgrammingError: (2014, "Commands out of sync; you can't run this command now") in <bound method Cursor.__del__ of <MySQLdb.cursors.Cursor object at 0xb50dbf4c>> ignored
+Exception _mysql_exceptions.ProgrammingError: (2014, "Commands out of sync; you can't run this command now") in <bound method Cursor.__del__ of <MySQLdb.cursors.Cursor object at 0xb57e230c>> ignored
+Starting seattle_jls_django as webapps
