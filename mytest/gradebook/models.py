@@ -68,7 +68,7 @@ class EmergencyContact(models.Model):
                                        blank=True)  # Field name made lowercase.
     emergency_phone = models.CharField(db_column='EmergencyPhone', max_length=45,
                                        blank=True)  # Field name made lowercase.
-    addresses_address_id = models.ForeignKey(Addresses, db_column='Addresses_AddressID', blank=True,
+    addresses_address_id = models.ForeignKey(Address, db_column='Addresses_AddressID', blank=True,
                                              null=True)  # Field name made lowercase.
 
     class Meta:
@@ -114,9 +114,9 @@ class Student(models.Model):
                                           null=True)  # Field name made lowercase.
     student_email = models.CharField(db_column='StudentEmail', max_length=225, blank=True)  # Field name made lowercase.
     student_phone = models.CharField(db_column='StudentPhone', max_length=225, blank=True)  # Field name made lowercase.
-    emergency_contact_emergency_id = models.ForeignKey(EmergencyContacts, db_column='EmergencyContact_EmergencyID',
+    emergency_contact_emergency_id = models.ForeignKey(EmergencyContact, db_column='EmergencyContact_EmergencyID',
                                                        blank=True, null=True)  # Field name made lowercase.
-    addresses_address_id = models.ForeignKey(Addresses, db_column='Addresses_AddressID', blank=True,
+    addresses_address_id = models.ForeignKey(Address, db_column='Addresses_AddressID', blank=True,
                                              null=True)  # Field name made lowercase.
 
     class Meta:
@@ -138,7 +138,7 @@ class Parent(models.Model):
                                            blank=True)  # Field name made lowercase.
     parent_email = models.CharField(db_column='ParentEmail', max_length=45, blank=True)  # Field name made lowercase.
     parent_phone = models.CharField(db_column='ParentPhone', max_length=45, blank=True)  # Field name made lowercase.
-    address_address_id = models.ForeignKey(Addresses, db_column='Address_AddressID', blank=True,
+    address_address_id = models.ForeignKey(Address, db_column='Address_AddressID', blank=True,
                                            null=True)  # Field name made lowercase.
 
     class Meta:
@@ -150,8 +150,8 @@ class Parent(models.Model):
 
 
 class Family(models.Model):
-    students_student_id = models.ForeignKey('Students', db_column='Students_StudentID')  # Field name made lowercase.
-    parent_parent_id = models.ForeignKey('Parents', db_column='Parent_parentID')  # Field name made lowercase.
+    students_student_id = models.ForeignKey(Student, db_column='Students_StudentID')  # Field name made lowercase.
+    parent_parent_id = models.ForeignKey(Parent, db_column='Parent_parentID')  # Field name made lowercase.
 
     class Meta:
         managed = False
@@ -224,18 +224,18 @@ class Schedule(models.Model):
 
 class Class(models.Model):
     class_id = models.IntegerField(db_column='ClassID', primary_key=True)  # Field name made lowercase.
-    academic_years_academic_year_id = models.ForeignKey(AcademicYears,
+    academic_years_academic_year_id = models.ForeignKey(AcademicYear,
                                                         db_column='AcademicYears_AcademicYearID')
-    academic_quarters_academic_quarter_id = models.ForeignKey(AcademicQuarters,
+    academic_quarters_academic_quarter_id = models.ForeignKey(AcademicQuarter,
                                                               db_column='AcademicQuarters_AcademicQuarterID')
-    courses_course_id = models.ForeignKey('Courses', db_column='Courses_CourseID')  # Field name made lowercase.
+    courses_course_id = models.ForeignKey(Course, db_column='Courses_CourseID')  # Field name made lowercase.
     class_section = models.CharField(db_column='ClassSection', max_length=45, blank=True)  # Field name made lowercase.
-    teachers_teacher_id = models.ForeignKey('Teachers', db_column='Teachers_TeacherID')  # Field name made lowercase.
-    rooms_room_id = models.ForeignKey('Rooms', db_column='Rooms_RoomID', blank=True,
+    teachers_teacher_id = models.ForeignKey(Teacher, db_column='Teachers_TeacherID')  # Field name made lowercase.
+    rooms_room_id = models.ForeignKey(Room, db_column='Rooms_RoomID', blank=True,
                                       null=True)  # Field name made lowercase.
-    schedules_schedule_id = models.ForeignKey('Schedules', db_column='Schedules_ScheduleID', blank=True,
+    schedules_schedule_id = models.ForeignKey(Schedule, db_column='Schedules_ScheduleID', blank=True,
                                               null=True)  # Field name made lowercase.
-    curriculums_curriculum_id = models.ForeignKey('Curriculums', db_column='Curriculums_CurriculumID', blank=True,
+    curriculums_curriculum_id = models.ForeignKey(Curriculum, db_column='Curriculums_CurriculumID', blank=True,
                                                   null=True)  # Field name made lowercase.
 
     class Meta:
@@ -251,8 +251,8 @@ class Class(models.Model):
 
 class Enrollment(models.Model):
     enrollment_id = models.IntegerField(db_column='EnrollmentID', primary_key=True)  # Field name made lowercase.
-    classes_class_id = models.ForeignKey(Classes, db_column='Classes_ClassID')  # Field name made lowercase.
-    students_student_id = models.ForeignKey('Students', db_column='Students_StudentID')  # Field name made lowercase.
+    classes_class_id = models.ForeignKey(Class, db_column='Classes_ClassID')  # Field name made lowercase.
+    students_student_id = models.ForeignKey(Student, db_column='Students_StudentID')  # Field name made lowercase.
     drop_status = models.IntegerField(db_column='DropStatus', blank=True, null=True)  # Field name made lowercase.
     attendance_total = models.IntegerField(db_column='AttendanceTotal', blank=True,
                                            null=True)  # Field name made lowercase.
@@ -270,9 +270,9 @@ class Enrollment(models.Model):
 
 class Grade(models.Model):
     grade_id = models.IntegerField(db_column='GradeID', primary_key=True)  # Field name made lowercase.
-    enrollments_enrollment_id = models.ForeignKey(Enrollments,
+    enrollments_enrollment_id = models.ForeignKey(Enrollment,
                                                   db_column='Enrollments_EnrollmentID')  # Field name made lowercase.
-    assignment_types_assignment_type_id = models.ForeignKey(AssignmentTypes,
+    assignment_types_assignment_type_id = models.ForeignKey(AssignmentType,
                                                             db_column='AssignmentTypes_AssignmentTypeID')
     grade_score = models.CharField(db_column='GradeScore', max_length=45, blank=True)  # Field name made lowercase.
 
