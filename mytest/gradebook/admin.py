@@ -84,7 +84,7 @@ class ClassesAdmin(admin.ModelAdmin):
     search_fields = ['academic_quarters_academic_quarter_id__academic_quarter_name',
                      'academic_years_academic_year_id__academic_year_id',
                      'academic_years_academic_year_id__academic_year_title', 'courses_course_id__course_level',
-                     'teachers_teacher_id__teacher_last_name', 'teacher_teacher_id__teacher_first_name']
+                     'teachers_teacher_id__teacher_last_name', 'teachers_teacher_id__teacher_first_name']
     inlines = [StudentEnrollmentInline]
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '40'})},
