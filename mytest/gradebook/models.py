@@ -17,7 +17,7 @@ class AcademicQuarter(models.Model):
         managed = False
         db_table = 'AcademicQuarters'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.academic_quarter_name
 
 
@@ -34,7 +34,7 @@ class AcademicYear(models.Model):
         managed = False
         db_table = 'AcademicYears'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.academic_year_title
 
 
@@ -56,7 +56,7 @@ class Address(models.Model):
         db_table = 'Addresses'
         verbose_name_plural = "addresses"
 
-    def __str__(self):
+    def __unicode__(self):
         return self.address_id
 
 
@@ -75,7 +75,7 @@ class EmergencyContact(models.Model):
         managed = False
         db_table = 'EmergencyContacts'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.emergencyid
 
 
@@ -88,7 +88,7 @@ class AssignmentType(models.Model):
         managed = False
         db_table = 'AssignmentTypes'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.assignment_title
 
 
@@ -100,7 +100,7 @@ class Course(models.Model):
         managed = False
         db_table = 'Courses'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.course_level
 
 
@@ -123,9 +123,9 @@ class Student(models.Model):
         managed = False
         db_table = 'Students'
 
-    def __str__(self):
-        return unicode(self.student_id) or u''
-        #return u'%s, %s' % (self.student_last_name, self.student_first_name)
+    def __unicode__(self):
+        #return unicode(self.student_id) or u''
+        return u'%s, %s' % (self.student_last_name, self.student_first_name)
 
 
 class Parent(models.Model):
@@ -145,16 +145,17 @@ class Parent(models.Model):
         managed = False
         db_table = 'Parents'
 
-    def __str__(self):
+    def __unicode__(self):
         return u'%s, %s' % (self.parent_last_name, self.parent_first_name)
 
 
 class Family(models.Model):
+    id = models.IntegerField(db_column='id', primary_key=True)
     students_student_id = models.ForeignKey(Student, db_column='Students_StudentID')  # Field name made lowercase.
     parent_parent_id = models.ForeignKey(Parent, db_column='Parent_parentID')  # Field name made lowercase.
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'Families'
         verbose_name_plural = "families"
 
@@ -173,7 +174,7 @@ class Teacher(models.Model):
         managed = False
         db_table = 'Teachers'
 
-    def __str__(self):
+    def __unicode__(self):
         return u'%s, %s' % (self.teacher_last_name, self.teacher_first_name)
 
 
@@ -190,7 +191,7 @@ class Curriculum(models.Model):
         managed = False
         db_table = 'Curriculums'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.curriculum_id
 
 
@@ -204,7 +205,7 @@ class Room(models.Model):
         managed = False
         db_table = 'Rooms'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.room_id
 
 
@@ -218,7 +219,7 @@ class Schedule(models.Model):
         managed = False
         db_table = 'Schedules'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.schedule_id
 
 
@@ -243,7 +244,7 @@ class Class(models.Model):
         db_table = 'Classes'
         verbose_name_plural = "classes"
 
-    def __str__(self):
+    def __unicode__(self):
         return u'(%s %s) %s %s: %s ' % (
             self.academic_years_academic_year_id, self.academic_quarters_academic_quarter_id, self.courses_course_id,
             self.class_section, self.teachers_teacher_id)
@@ -264,7 +265,7 @@ class Enrollment(models.Model):
         managed = False
         db_table = 'Enrollments'
 
-    def __str__(self):
+    def __unicode__(self):
         return unicode(self.enrollment_id)
 
 
@@ -280,5 +281,5 @@ class Grade(models.Model):
         managed = False
         db_table = 'Grades'
 
-    def __str__(self):
+    def __unicode__(self):
         return self.grade_score
