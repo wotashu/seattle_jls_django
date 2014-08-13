@@ -40,3 +40,159 @@ Starting seattle_jls_django as webapps
 Exception _mysql_exceptions.ProgrammingError: (2014, "Commands out of sync; you can't run this command now") in <bound method Cursor.__del__ of <MySQLdb.cursors.Cursor object at 0xb50dbf4c>> ignored
 Exception _mysql_exceptions.ProgrammingError: (2014, "Commands out of sync; you can't run this command now") in <bound method Cursor.__del__ of <MySQLdb.cursors.Cursor object at 0xb57e230c>> ignored
 Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
