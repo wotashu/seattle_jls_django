@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.forms import TextInput, Textarea
+from django.db import models
 from gradebook.models import AcademicYear
 from gradebook.models import AcademicQuarter
 from gradebook.models import Student
@@ -9,9 +11,16 @@ from gradebook.models import AssignmentType
 from gradebook.models import Class
 
 
+class ClassesInline(admin.TabularInline):
+    model = Class
+    extra = 0
+    fields = ['academic_quarters_academic_quarter_id', 'courses_course_id', 'class_section', 'teachers_teacher_id']
+
+
 class AcademicYearsAdmin(admin.ModelAdmin):
     fields = ['academic_year_id', 'academic_year_title', 'academic_year_start_date', 'academic_year_end_date']
     list_display = ('academic_year_id', 'academic_year_title', 'academic_year_start_date', 'academic_year_end_date')
+    inlines = [ClassesInline]
 
 
 class AcademicQuartersAdmin(admin.ModelAdmin):
@@ -23,6 +32,10 @@ class EnrollmentsInline(admin.TabularInline):
     model = Enrollment
     extra = 0
     fields = ['classes_class_id', 'drop_status', 'attendance_total', 'attendance_score']
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size': '20'})},
+        models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
+    }
 
 
 class StudentsAdmin(admin.ModelAdmin):
@@ -51,14 +64,36 @@ class GradesAdmin(admin.ModelAdmin):
     list_display = ('grade_id', 'grade_score')
 
 
+class StudentEnrollmentInline(admin.TabularInline):
+    readonly_fields = ['selflink', ]
+    model = Enrollment
+    # fk_name = "classes_class_id"
+    # fields = ['students_student_id', 'drop_status', 'attendance_total', 'attendance_score', 'notes']
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size': '20'})},
+        models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
+    }
+
+
 class ClassesAdmin(admin.ModelAdmin):
-    fields = ['class_id', 'academic_years_academic_year_id', 'class_section', 'teachers_teacher_id']
-    list_display = ('class_id', 'academic_years_academic_year_id', 'class_section')
+    fields = ['class_id', 'academic_years_academic_year_id', 'courses_course_id', 'class_section',
+              'teachers_teacher_id']
+    list_display = ('class_id', 'academic_years_academic_year_id', 'academic_quarters_academic_quarter_id',
+                    'courses_course_id', 'class_section', 'teachers_teacher_id')
+    search_fields = ['academic_quarters_academic_quarter_id__academic_quarter_name',
+                     'academic_years_academic_year_id__academic_year_id',
+                     'academic_years_academic_year_id__academic_year_title', 'courses_course_id__course_level',
+                     'teachers_teacher_id__teacher_last_name', 'teacher_teacher_id__teacher_first_name']
+    inlines = [StudentEnrollmentInline]
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size': '40'})},
+        models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
+    }
 
 
 class GradesInline(admin.TabularInline):
     model = Grade
-    extra = 0
+    extra = 1
     fields = ['assignment_types_assignment_type_id', 'grade_score']
 
 
@@ -71,6 +106,10 @@ class EnrollmentsAdmin(admin.ModelAdmin):
     inlines = [GradesInline]
     list_display = ('students_student_id', 'classes_class_id', 'drop_status', 'notes')
     search_fields = ['students_student_id__student_last_name', 'students_student_id__student_first_name', 'notes']
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size': '20'})},
+        models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
+    }
 
 
 admin.site.register(AcademicYear, AcademicYearsAdmin)

@@ -268,6 +268,14 @@ class Enrollment(models.Model):
     def __unicode__(self):
         return unicode(self.enrollment_id)
 
+    def selflink(self):
+        if self.enrollment_id:
+            return "<a href='/admin/gradebook/enrollment/%s' target='_blank'>Edit</a>" % str(self.enrollment_id)
+        else:
+            return "Not present"
+
+    selflink.allow_tags = True
+
 
 class Grade(models.Model):
     grade_id = models.IntegerField(db_column='GradeID', primary_key=True)  # Field name made lowercase.
