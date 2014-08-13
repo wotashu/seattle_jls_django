@@ -65,10 +65,11 @@ class GradesAdmin(admin.ModelAdmin):
 
 
 class StudentEnrollmentInline(admin.TabularInline):
-    readonly_fields = ['selflink', ]
+    readonly_fields = ['self_link', ]
     model = Enrollment
+    extra = 1
     # fk_name = "classes_class_id"
-    # fields = ['students_student_id', 'drop_status', 'attendance_total', 'attendance_score', 'notes']
+    fields = ['students_student_id', 'drop_status', 'attendance_total', 'attendance_score', 'notes', 'self_link']
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
