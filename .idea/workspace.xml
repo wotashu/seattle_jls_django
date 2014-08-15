@@ -759,7 +759,11 @@
       <created>1408062298841</created>
       <updated>1408062298841</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add &quot;SITE_ID = 2&quot;">
+      <created>1408062526314</created>
+      <updated>1408062526314</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -825,7 +829,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="tweak views" />
     <MESSAGE value="tweak html templates" />
     <MESSAGE value="add static files" />
     <MESSAGE value=" or u'' added to models" />
@@ -850,7 +853,8 @@
     <MESSAGE value="change links to inline student enrollments under classes" />
     <MESSAGE value="fix typo in admin.py" />
     <MESSAGE value="add &quot;SITE_ID = 1&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;SITE_ID = 1&quot;" />
+    <MESSAGE value="add &quot;SITE_ID = 2&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &quot;SITE_ID = 2&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
