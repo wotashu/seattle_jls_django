@@ -198,3 +198,12 @@ gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
 Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `cycle` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
