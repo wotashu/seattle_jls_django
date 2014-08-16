@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -31,7 +32,7 @@ SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = (
-#    'grappelli',
+    # 'grappelli',
     'wkhtmltopdf',
     'admin_tools',
     'admin_tools.theming',
@@ -46,6 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'gradebook',
     'import_export',
+    'crispy_forms'
 )
 
 MIDDLEWARE_CLASSES = (
