@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, url
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from gradebook import views
 
@@ -10,3 +11,5 @@ urlpatterns = patterns('',
     url(r'homeboy', views.homeboy, name='homeboy'),
     url(r'^students/(?P<student_id>[0-9]+)/$', views.students, name='students'),
 )
+
+urlpatterns += staticfiles_urlpatterns()
