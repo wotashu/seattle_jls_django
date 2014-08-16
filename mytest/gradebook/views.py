@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import Http404
 
-from gradebook.models import Enrollment, Class, Student, Teacher
+from gradebook.models import Enrollment, Class, Student
 
 
 def index(request):
@@ -33,7 +33,7 @@ def homeboy(request):
 def students(request, student_id):
     try:
         student = Student.objects.get(pk=student_id)
-    except Students.DoesNotExist:
+    except Student.DoesNotExist:
         raise Http404
     context = {'student': student}
     return render(request, 'gradebook/student_id.html', context)
