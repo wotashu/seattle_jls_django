@@ -115,7 +115,8 @@ class EnrollmentsAdmin(admin.ModelAdmin):
 
 
 class AddressAdmin(admin.ModelAdmin):
-    fields = ['address_id', 'address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip', 'address_country']
+    fields = ['address_id', 'address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip',
+              'address_country']
     search_fields = ['address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip',
                      'address_country']
     list_display = ('address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip',
