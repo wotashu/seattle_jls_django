@@ -1,8 +1,15 @@
+from django import forms
 from django.shortcuts import render
-from django.http import Http404
+from django.http import Http404, HttpResponseRedirect
+from gradebook.forms import AddressForm, StudentForm
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+
+from gradebook.models import Enrollment, Class, Student, Address
 
 
-from gradebook.models import Enrollment, Class, Student
+class NameForm(forms.Form):
+    your_name = forms.CharField(label='Your name', max_length=100)
 
 
 def index(request):
@@ -38,4 +45,38 @@ def students(request, student_id):
         raise Http404
     context = {'student': student}
     return render(request, 'gradebook/student_id.html', context)
+
+
+
+def add_student(request):
+    context = RequestContext(request)
+
+    if request.method == 'POST':
+        form = StudentForm(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+            return index(request)
+        else:
+            print form.errors
+    else:
+        form = StudentForm()
+    return render_to_response('gradebook/add_student.html', {'form': form}, context)
+
+
+def add_address(request):
+    context = RequestContext(request)
+
+    if request.method == 'POST':
+        form = AddressForm(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+            return index(request)
+        else:
+            print form.errors
+    else:
+        form = AddressForm()
+    return render_to_response('gradebook/add_address.html', {'form': form}, context)
+
 # Create your views here.

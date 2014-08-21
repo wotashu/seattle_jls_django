@@ -9,6 +9,7 @@ from gradebook.models import Enrollment
 from gradebook.models import Grade
 from gradebook.models import AssignmentType
 from gradebook.models import Class
+from gradebook.models import Address
 
 
 class ClassesInline(admin.TabularInline):
@@ -113,6 +114,13 @@ class EnrollmentsAdmin(admin.ModelAdmin):
     }
 
 
+class AddressAdmin(admin.ModelAdmin):
+    fields = ['address_id', 'address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip', 'address_country']
+    search_fields = ['address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip',
+                     'address_country']
+    list_display = ('address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip',
+                    'address_country')
+
 admin.site.register(AcademicYear, AcademicYearsAdmin)
 admin.site.register(AcademicQuarter, AcademicQuartersAdmin)
 admin.site.register(Student, StudentsAdmin)
@@ -121,4 +129,5 @@ admin.site.register(Grade, GradesAdmin)
 admin.site.register(AssignmentType, AssignmentTypesAdmin)
 admin.site.register(Enrollment, EnrollmentsAdmin)
 admin.site.register(Class, ClassesAdmin)
+admin.site.register(Address, AddressAdmin)
 # Register your models here.

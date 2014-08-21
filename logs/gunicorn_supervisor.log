@@ -223,3 +223,56 @@ Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+Starting seattle_jls_django as webapps
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+<ul class="errorlist"><li>address_street_2<ul class="errorlist"><li>This field is required.</li></ul></li><li>address_country<ul class="errorlist"><li>This field is required.</li></ul></li><li>address_zip<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>address_street_2<ul class="errorlist"><li>This field is required.</li></ul></li><li>address_country<ul class="errorlist"><li>This field is required.</li></ul></li><li>address_zip<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Starting seattle_jls_django as webapps
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:5: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form AddressForm needs updating
+  class AddressForm(forms.ModelForm):
+
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+<ul class="errorlist"><li>address_id<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>address_id<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>address_id<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>address_id<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>address_id<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>address_id<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+/webapps/seattle_jls_django/mytest/gradebook/forms.py:19: RemovedInDjango18Warning: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is deprecated - form StudentForm needs updating
+  class StudentForm(forms.ModelForm):
+
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps

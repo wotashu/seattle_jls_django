@@ -18,7 +18,7 @@ class AcademicQuarter(models.Model):
         db_table = 'AcademicQuarters'
 
     def __unicode__(self):
-        return self.academic_quarter_name
+        return unicode(self.academic_quarter_name)
 
 
 class AcademicYear(models.Model):
@@ -35,7 +35,7 @@ class AcademicYear(models.Model):
         db_table = 'AcademicYears'
 
     def __unicode__(self):
-        return self.academic_year_title
+        return unicode(self.academic_year_title)
 
 
 class Address(models.Model):
@@ -57,7 +57,7 @@ class Address(models.Model):
         verbose_name_plural = "addresses"
 
     def __unicode__(self):
-        return self.address_id
+        return unicode(self.address_id)
 
 
 class EmergencyContact(models.Model):
@@ -76,7 +76,7 @@ class EmergencyContact(models.Model):
         db_table = 'EmergencyContacts'
 
     def __unicode__(self):
-        return self.emergencyid
+        return unicode(self.emergency_id)
 
 
 class AssignmentType(models.Model):
@@ -89,7 +89,7 @@ class AssignmentType(models.Model):
         db_table = 'AssignmentTypes'
 
     def __unicode__(self):
-        return self.assignment_title
+        return unicode(self.assignment_title)
 
 
 class Course(models.Model):
@@ -101,7 +101,7 @@ class Course(models.Model):
         db_table = 'Courses'
 
     def __unicode__(self):
-        return self.course_level
+        return unicode(self.course_level)
 
 
 class Student(models.Model):
@@ -192,7 +192,7 @@ class Curriculum(models.Model):
         db_table = 'Curriculums'
 
     def __unicode__(self):
-        return self.curriculum_id
+        return unicode(self.curriculum_id)
 
 
 class Room(models.Model):
@@ -206,7 +206,7 @@ class Room(models.Model):
         db_table = 'Rooms'
 
     def __unicode__(self):
-        return self.room_id
+        return unicode(self.room_id)
 
 
 class Schedule(models.Model):
@@ -220,7 +220,7 @@ class Schedule(models.Model):
         db_table = 'Schedules'
 
     def __unicode__(self):
-        return self.schedule_id
+        return unicode(self.schedule_id)
 
 
 class Class(models.Model):
@@ -290,4 +290,4 @@ class Grade(models.Model):
         db_table = 'Grades'
 
     def __unicode__(self):
-        return self.grade_score
+        return unicode(self.grade_score)
