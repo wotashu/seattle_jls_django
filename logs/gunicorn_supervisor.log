@@ -276,3 +276,61 @@ Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
 Starting seattle_jls_django as webapps
+<ul class="errorlist"><li>student_first_name<ul class="errorlist"><li>This field is required.</li></ul></li><li>student_last_name<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>student_first_name<ul class="errorlist"><li>This field is required.</li></ul></li><li>student_last_name<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+<ul class="errorlist"><li>student_first_name<ul class="errorlist"><li>This field is required.</li></ul></li><li>student_last_name<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `cycle` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `cycle` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `firstof` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+/webapps/local/lib/python2.7/site-packages/django/template/base.py:290: RemovedInDjango18Warning: 'The `cycle` template tag is changing to escape its arguments; the non-autoescaping version is deprecated. Load it from the `future` tag library to start using the new behavior.
+  compiled_result = compile_func(self, token)
+
+Starting seattle_jls_django as webapps

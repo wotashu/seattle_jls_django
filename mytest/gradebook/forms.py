@@ -11,6 +11,7 @@ class StudentForm(forms.ModelForm):
     student_birth_date = forms.DateField(required=False, help_text="Birth Date")
     student_email = forms.EmailField(max_length=225, required=False, help_text="Email")
     student_phone = forms.CharField(max_length=225, required=False, help_text="Phone Number")
+    addresses_address_id = forms.ModelChoiceField(queryset=Address.objects.all())
 
     class Meta:
         model = Student

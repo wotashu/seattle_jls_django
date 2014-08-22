@@ -47,7 +47,6 @@ def students(request, student_id):
     return render(request, 'gradebook/student_id.html', context)
 
 
-
 def add_student(request):
     context = RequestContext(request)
 

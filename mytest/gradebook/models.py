@@ -197,9 +197,9 @@ class Curriculum(models.Model):
 
 class Room(models.Model):
     room_id = models.IntegerField(db_column='RoomID', primary_key=True)  # Field name made lowercase.
-    building = models.CharField(db_column='Building', max_length=225)  # Field name made lowercase.
-    capacity = models.CharField(db_column='Capacity', max_length=225)  # Field name made lowercase.
-    equipment = models.CharField(db_column='Equipment', max_length=225)  # Field name made lowercase.
+    building = models.CharField(db_column='Building', max_length=225, blank=True)  # Field name made lowercase.
+    capacity = models.CharField(db_column='Capacity', max_length=225, blank=True)  # Field name made lowercase.
+    equipment = models.CharField(db_column='Equipment', max_length=225, blank=True)  # Field name made lowercase.
 
     class Meta:
         managed = False

@@ -1,15 +1,8 @@
 from django.contrib import admin
 from django.forms import TextInput, Textarea
 from django.db import models
-from gradebook.models import AcademicYear
-from gradebook.models import AcademicQuarter
-from gradebook.models import Student
-from gradebook.models import Teacher
-from gradebook.models import Enrollment
-from gradebook.models import Grade
-from gradebook.models import AssignmentType
-from gradebook.models import Class
-from gradebook.models import Address
+from gradebook.models import AcademicYear, AcademicQuarter, Student, Teacher
+from gradebook.models import Enrollment, Grade, AssignmentType, Class, Address, Room, Curriculum
 
 
 class ClassesInline(admin.TabularInline):
@@ -44,12 +37,14 @@ class StudentsAdmin(admin.ModelAdmin):
     list_display = ('student_id', 'student_last_name', 'student_first_name', 'student_birth_date')
     search_fields = ['student_id', 'student_last_name', 'student_first_name']
     inlines = [EnrollmentsInline]
+    readonly_fields = ('student_id',)
 
 
 class TeachersAdmin(admin.ModelAdmin):
     fields = ['teacher_id', 'teacher_last_name', 'teacher_first_name', 'teacher_email', 'teacher_phone']
     list_display = ('teacher_id', 'teacher_last_name', 'teacher_first_name')
     search_fields = ['teacher_id', 'teacher_last_name', 'teacher_first_name']
+    readonly_fields = ('teacher_id',)
 
 
 class AssignmentTypesAdmin(admin.ModelAdmin):
@@ -91,6 +86,7 @@ class ClassesAdmin(admin.ModelAdmin):
         models.CharField: {'widget': TextInput(attrs={'size': '40'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
+    readonly_fields = ('class_id',)
 
 
 class GradesInline(admin.TabularInline):
@@ -112,6 +108,7 @@ class EnrollmentsAdmin(admin.ModelAdmin):
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
+    readonly_fields = ('enrollment_id',)
 
 
 class AddressAdmin(admin.ModelAdmin):
@@ -121,6 +118,18 @@ class AddressAdmin(admin.ModelAdmin):
                      'address_country']
     list_display = ('address_street_1', 'address_street_2', 'address_city', 'address_state', 'address_zip',
                     'address_country')
+    readonly_fields = ('address_id',)
+
+
+class RoomAdmin(admin.ModelAdmin):
+    fields = ['room_id', 'building', 'capacity', 'equipment']
+    readonly_fields = ('room_id',)
+
+
+class CurriculumAdmin(admin.ModelAdmin):
+    fields = ['curriculum_id', 'curriculum_description', 'curriculum_level', 'curriculum_syllabus']
+    readonly_fields = ('curriculum_id',)
+
 
 admin.site.register(AcademicYear, AcademicYearsAdmin)
 admin.site.register(AcademicQuarter, AcademicQuartersAdmin)
@@ -131,4 +140,6 @@ admin.site.register(AssignmentType, AssignmentTypesAdmin)
 admin.site.register(Enrollment, EnrollmentsAdmin)
 admin.site.register(Class, ClassesAdmin)
 admin.site.register(Address, AddressAdmin)
+admin.site.register(Room, RoomAdmin)
+admin.site.register(Curriculum, CurriculumAdmin)
 # Register your models here.
