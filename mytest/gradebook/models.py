@@ -55,9 +55,12 @@ class Address(models.Model):
         managed = False
         db_table = 'Addresses'
         verbose_name_plural = "addresses"
+        ordering = ('address_street_1', 'address_street_2',)
 
     def __unicode__(self):
-        return unicode(self.address_id)
+        # return unicode(self.address_id)
+        return u'%s, %s, %s, %s, %s' % (self.address_street_1, self.address_street_2, self.address_city,
+                                        self.address_state, self.address_zip)
 
 
 class EmergencyContact(models.Model):
@@ -122,6 +125,7 @@ class Student(models.Model):
     class Meta:
         managed = False
         db_table = 'Students'
+        ordering = ('student_last_name', 'student_first_name')
 
     def __unicode__(self):
         #return unicode(self.student_id) or u''

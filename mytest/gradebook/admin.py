@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.forms import TextInput, Textarea
 from django.db import models
 from gradebook.models import AcademicYear, AcademicQuarter, Student, Teacher
-from gradebook.models import Enrollment, Grade, AssignmentType, Class, Address, Room, Curriculum
+from gradebook.models import Enrollment, Grade, AssignmentType, Class, Address, Room, Curriculum, Parent, Family
 
 
 class ClassesInline(admin.TabularInline):
@@ -133,6 +133,17 @@ class CurriculumAdmin(admin.ModelAdmin):
     readonly_fields = ('curriculum_id',)
 
 
+class ParentAdmin(admin.ModelAdmin):
+    fields = ['parent_id', 'parent_first_name', 'parent_last_name', 'parent_relationship', 'parent_email',
+              'parent_phone', 'address_address_id']
+    readonly_fields = ('parent_id',)
+
+
+class FamilyAdmin(admin.ModelAdmin):
+    fields = ('id', 'students_student_id', 'parent_parent_id')
+    readonly_fields = ('id',)
+
+
 admin.site.register(AcademicYear, AcademicYearsAdmin)
 admin.site.register(AcademicQuarter, AcademicQuartersAdmin)
 admin.site.register(Student, StudentsAdmin)
@@ -144,4 +155,6 @@ admin.site.register(Class, ClassesAdmin)
 admin.site.register(Address, AddressAdmin)
 admin.site.register(Room, RoomAdmin)
 admin.site.register(Curriculum, CurriculumAdmin)
+admin.site.register(Parent, ParentAdmin)
+admin.site.register(Family, FamilyAdmin)
 # Register your models here.
