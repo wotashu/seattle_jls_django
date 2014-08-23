@@ -87,6 +87,8 @@ class ClassesAdmin(admin.ModelAdmin):
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
     readonly_fields = ('class_id',)
+    list_filter = ('academic_years_academic_year_id',
+                   'academic_quarters_academic_quarter_id', 'teachers_teacher_id')
 
 
 class GradesInline(admin.TabularInline):

@@ -155,7 +155,7 @@ class Family(models.Model):
     parent_parent_id = models.ForeignKey(Parent, db_column='Parent_parentID')  # Field name made lowercase.
 
     class Meta:
-        managed = True
+        managed = False
         db_table = 'Families'
         verbose_name_plural = "families"
 
@@ -200,9 +200,10 @@ class Room(models.Model):
     building = models.CharField(db_column='Building', max_length=225, blank=True)  # Field name made lowercase.
     capacity = models.CharField(db_column='Capacity', max_length=225, blank=True)  # Field name made lowercase.
     equipment = models.CharField(db_column='Equipment', max_length=225, blank=True)  # Field name made lowercase.
+    room_number = models.CharField(max_length=225, blank=True)
 
     class Meta:
-        managed = False
+        # managed = True
         db_table = 'Rooms'
 
     def __unicode__(self):

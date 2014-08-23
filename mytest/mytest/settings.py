@@ -48,8 +48,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'gradebook',
     'import_export',
-    'crispy_forms',
-    'south'
+    'crispy_forms'
 )
 
 
