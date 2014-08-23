@@ -275,13 +275,13 @@ class Enrollment(models.Model):
     def __unicode__(self):
         return unicode(self.enrollment_id)
 
-    def self_link(self):
+    def edit_grades(self):
         if self.enrollment_id:
             return "<a href='/admin/gradebook/enrollment/%s' target='_blank'>Edit</a>" % str(self.enrollment_id)
         else:
             return "Not present"
 
-    self_link.allow_tags = True
+    edit_grades.allow_tags = True
 
 
 class Grade(models.Model):

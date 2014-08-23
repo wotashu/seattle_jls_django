@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90141fe7-502f-498d-800e-40af504bbaef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/access.log" afterPath="$PROJECT_DIR$/mytest/access.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/admin.py" afterPath="$PROJECT_DIR$/mytest/gradebook/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/gunicorn_supervisor.log" afterPath="$PROJECT_DIR$/logs/gunicorn_supervisor.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/models.py" afterPath="$PROJECT_DIR$/mytest/gradebook/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -33,8 +34,8 @@
             <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.5625" vertical-offset="2916" max-vertical-offset="5508">
-                    <caret line="180" column="60" selection-start-line="180" selection-start-column="60" selection-end-line="180" selection-end-column="60" />
+                  <state vertical-scroll-proportion="0.6875" vertical-offset="4644" max-vertical-offset="5508">
+                    <caret line="280" column="13" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="13" />
                     <folding />
                   </state>
                 </provider>
@@ -74,8 +75,8 @@
       <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41935483" vertical-offset="1867" max-vertical-offset="2988">
-              <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.65844405" vertical-offset="733" max-vertical-offset="2988">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -934,7 +935,11 @@
       <created>1408823163917</created>
       <updated>1408823163917</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="various model updates">
+      <created>1408823793643</created>
+      <updated>1408823793643</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1000,7 +1005,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="temporarily remove wkhtmltopdf" />
     <MESSAGE value="update model classes to singular" />
     <MESSAGE value="update admin to singular from models" />
     <MESSAGE value="fix foreign keys on model update" />
@@ -1025,7 +1029,8 @@
     <MESSAGE value="add south to settings.py" />
     <MESSAGE value="revert changes to south" />
     <MESSAGE value="update model ordering&#10;add parents and families to admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="update model ordering&#10;add parents and families to admin" />
+    <MESSAGE value="various model updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="various model updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1404,16 +1409,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5625" vertical-offset="2916" max-vertical-offset="5508">
-          <caret line="180" column="60" selection-start-line="180" selection-start-column="60" selection-end-line="180" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.6875" vertical-offset="4644" max-vertical-offset="5508">
+          <caret line="280" column="13" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41935483" vertical-offset="1867" max-vertical-offset="2988">
-          <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.65844405" vertical-offset="733" max-vertical-offset="2988">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
