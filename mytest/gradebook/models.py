@@ -33,6 +33,7 @@ class AcademicYear(models.Model):
     class Meta:
         managed = False
         db_table = 'AcademicYears'
+        ordering = ('-academic_year_title',)
 
     def __unicode__(self):
         return unicode(self.academic_year_title)
@@ -250,6 +251,8 @@ class Class(models.Model):
         managed = False
         db_table = 'Classes'
         verbose_name_plural = "classes"
+        ordering = ('academic_years_academic_year_id', 'academic_quarters_academic_quarter_id', 'courses_course_id',
+                    'class_section', 'teachers_teacher_id',)
 
     def __unicode__(self):
         return u'(%s %s) %s %s: %s ' % (

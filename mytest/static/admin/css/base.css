@@ -135,7 +135,6 @@ blockquote {
 
 code, pre {
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-    background: inherit;
     color: #666;
     font-size: 11px;
 }
@@ -633,7 +632,7 @@ div.breadcrumbs {
     background: url(../img/icon_addlink.gif) 0 .2em no-repeat;
 }
 
-.changelink {
+.changelink, .inlinechangelink {
     padding-left: 12px;
     background: url(../img/icon_changelink.gif) 0 .2em no-repeat;
 }

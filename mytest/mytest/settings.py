@@ -32,13 +32,13 @@ SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = (
-    # 'grappelli.dashboard',
-    # 'grappelli',
+    'grappelli.dashboard',
+    'grappelli',
     'wkhtmltopdf',
-    'admin_tools',
-    'admin_tools.theming',
-    'admin_tools.menu',
-    'admin_tools.dashboard',
+    # 'admin_tools',
+    # 'admin_tools.theming',
+    # 'admin_tools.menu',
+    # 'admin_tools.dashboard',
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,7 +52,7 @@ INSTALLED_APPS = (
 )
 
 
-# GRAPPELLI_INDEX_DASHBOARD = 'mytest.dashboard.CustomIndexDashboard'
+GRAPPELLI_INDEX_DASHBOARD = 'mytest.dashboard.CustomIndexDashboard'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
