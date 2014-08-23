@@ -148,6 +148,7 @@ class Parent(models.Model):
     class Meta:
         managed = False
         db_table = 'Parents'
+        ordering = ('parent_last_name', 'parent_first_name',)
 
     def __unicode__(self):
         return u'%s, %s' % (self.parent_last_name, self.parent_first_name)
@@ -177,6 +178,7 @@ class Teacher(models.Model):
     class Meta:
         managed = False
         db_table = 'Teachers'
+        ordering = ('teacher_last_name', 'teacher_first_name',)
 
     def __unicode__(self):
         return u'%s, %s' % (self.teacher_last_name, self.teacher_first_name)
