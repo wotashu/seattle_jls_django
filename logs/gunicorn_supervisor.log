@@ -2155,3 +2155,6 @@ Starting seattle_jls_django as webapps
 /webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
   attrs['fields'] = SortedDict(declared_fields)
 
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
