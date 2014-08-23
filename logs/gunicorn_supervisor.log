@@ -1688,3 +1688,470 @@ Starting seattle_jls_django as webapps
 /webapps/local/lib/python2.7/site-packages/django/contrib/admin/util.py:7: RemovedInDjango19Warning: The django.contrib.admin.util module has been renamed. Use django.contrib.admin.utils instead.
   "Use django.contrib.admin.utils instead.", RemovedInDjango19Warning)
 
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/formats/base_formats.py:19: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/formats/base_formats.py:19: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/formats/base_formats.py:19: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/admin/util.py:7: RemovedInDjango19Warning: The django.contrib.admin.util module has been renamed. Use django.contrib.admin.utils instead.
+  "Use django.contrib.admin.utils instead.", RemovedInDjango19Warning)
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/admin/util.py:7: RemovedInDjango19Warning: The django.contrib.admin.util module has been renamed. Use django.contrib.admin.utils instead.
+  "Use django.contrib.admin.utils instead.", RemovedInDjango19Warning)
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 169, in run
+    self.manage_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 542, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Traceback (most recent call last):
+  File "/webapps/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+    super(Application, self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 196, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 292, in halt
+    self.stop()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 343, in stop
+    time.sleep(0.1)
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+    self.reap_workers()
+  File "/webapps/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+Starting seattle_jls_django as webapps
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/utils.py:9: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils.importlib import import_module
+
+/webapps/local/lib/python2.7/site-packages/django/contrib/contenttypes/models.py:142: RemovedInDjango19Warning: Model class django.contrib.contenttypes.models.ContentType doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ContentType(models.Model):
+
+/webapps/local/lib/python2.7/site-packages/admin_tools/dashboard/modules.py:8: RemovedInDjango19Warning: The django.forms.util module has been renamed. Use django.forms.utils instead.
+  from django.forms.util import flatatt
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
+/webapps/local/lib/python2.7/site-packages/import_export/resources.py:104: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  attrs['fields'] = SortedDict(declared_fields)
+
