@@ -48,10 +48,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'gradebook',
     'import_export',
-    'crispy_forms'
+    'crispy_forms',
+    'south'
 )
 
-GRAPPELLI_INDEX_DASHBOARD = 'mytest.dashboard.CustomIndexDashboard'
+
+# GRAPPELLI_INDEX_DASHBOARD = 'mytest.dashboard.CustomIndexDashboard'
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
