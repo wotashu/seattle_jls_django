@@ -1,8 +1,18 @@
+from datetime import date
 from django.contrib import admin
 from django.forms import TextInput, Textarea
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 from gradebook.models import AcademicYear, AcademicQuarter, Student, Teacher
 from gradebook.models import Enrollment, Grade, AssignmentType, Class, Address, Room, Curriculum, Parent, Family
+from import_export.admin import ImportExportModelAdmin
+from import_export import resources
+
+
+class StudentResource(resources.ModelResource):
+
+    class Meta:
+        model = Student
 
 
 class ClassesInline(admin.TabularInline):
@@ -32,12 +42,14 @@ class EnrollmentsInline(admin.TabularInline):
     }
 
 
-class StudentsAdmin(admin.ModelAdmin):
+class StudentsAdmin(ImportExportModelAdmin):
     fields = ['student_id', 'student_last_name', 'student_first_name', 'student_alternative_name', 'student_birth_date']
     list_display = ('student_id', 'student_last_name', 'student_first_name', 'student_birth_date')
     search_fields = ['student_id', 'student_last_name', 'student_first_name']
     inlines = [EnrollmentsInline]
     readonly_fields = ('student_id',)
+    resource_class = StudentResource
+    pass
 
 
 class TeachersAdmin(admin.ModelAdmin):
@@ -97,20 +109,32 @@ class GradesInline(admin.TabularInline):
     fields = ['assignment_types_assignment_type_id', 'grade_score']
 
 
-class EnrollmentsAdmin(admin.ModelAdmin):
+class EnrollmentResource(resources.ModelResource):
+
+    class Meta:
+        model = Enrollment
+
+
+class EnrollmentsAdmin(ImportExportModelAdmin):
     fieldsets = [
         (None, {'fields': ['enrollment_id', 'classes_class_id', 'students_student_id']}),
         ('Attendance', {'fields': ['drop_status', 'attendance_total', 'attendance_score'], 'classes': ['collapse']}),
-        ('Notes', {'fields': ['notes'], 'classes': ['collapse']})
+        ('Notes', {'fields': ['notes'], 'classes': ['collapse']}),
+
     ]
     inlines = [GradesInline]
     list_display = ('students_student_id', 'classes_class_id', 'drop_status', 'notes')
-    search_fields = ['students_student_id__student_last_name', 'students_student_id__student_first_name', 'notes']
+    search_fields = ['students_student_id__student_last_name', 'students_student_id__student_first_name', 'notes',
+                     'classes_class_id__teachers_teacher_id__teacher_last_name',
+                     'classes_class_id__teachers_teacher_id__teacher_first_name',
+                     'classes_class_id__academic_years_academic_year_id__academic_year_title']
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
     readonly_fields = ('enrollment_id',)
+    list_filter = ('classes_class_id__academic_years_academic_year_id', 'classes_class_id__teachers_teacher_id')
+    resource_class = EnrollmentResource
 
 
 class AddressAdmin(admin.ModelAdmin):

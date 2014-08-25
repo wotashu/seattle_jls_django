@@ -1,6 +1,6 @@
 from django import forms
 from django.shortcuts import render
-from django.http import Http404, HttpResponseRedirect
+from django.http import Http404, HttpResponseRedirect, HttpResponse
 from gradebook.forms import AddressForm, StudentForm
 from django.shortcuts import render_to_response
 from django.template import RequestContext
@@ -13,9 +13,9 @@ class NameForm(forms.Form):
 
 
 def index(request):
-    get_enrollment_list = Enrollment.objects.all().order_by('enrollment_id')[:500]
-    context = {'get_enrollment_list': get_enrollment_list}
-    return render(request, 'gradebook/index.html', context)
+    # get_enrollment_list = Enrollment.objects.all().order_by('enrollment_id')[:500]
+    # context = {'get_enrollment_list': get_enrollment_list}
+    return render(request, 'gradebook/index.html')
 
 
 def detail(request, enrollment_id):

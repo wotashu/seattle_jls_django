@@ -2,6 +2,8 @@ from django import forms
 import datetime
 from django.forms import widgets
 from gradebook.models import Address, Student
+from crispy_forms.helper import FormHelper
+from crispy_forms.layout import Submit
 
 
 class StudentForm(forms.ModelForm):
@@ -17,6 +19,16 @@ class StudentForm(forms.ModelForm):
         model = Student
         fields = ('student_last_name', 'student_first_name', 'student_alternative_name', 'student_birth_date',
                   'student_email', 'student_phone')
+
+    def __init__(self, *args):
+        super(StudentForm, self).__init__(*args)
+        self.helper = FormHelper()
+        self.helper.form_id = 'student_form'
+        self.helper.form_class = 'blueForms'
+        self.helper.form_method = 'post'
+        self.helper.form_action = '/gradebook/add_student/'
+
+        self.helper.add_input(Submit('submit', 'Submit'))
 
 
 class AddressForm(forms.ModelForm):
