@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90141fe7-502f-498d-800e-40af504bbaef" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mytest/gradebook/templates/gradebook/homeboy.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/access.log" afterPath="$PROJECT_DIR$/mytest/access.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/admin.py" afterPath="$PROJECT_DIR$/mytest/gradebook/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/gunicorn_supervisor.log" afterPath="$PROJECT_DIR$/logs/gunicorn_supervisor.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/models.py" afterPath="$PROJECT_DIR$/mytest/gradebook/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/templates/gradebook/students.html" afterPath="$PROJECT_DIR$/mytest/gradebook/templates/gradebook/students.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/urls.py" afterPath="$PROJECT_DIR$/mytest/gradebook/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mytest/gradebook/views.py" afterPath="$PROJECT_DIR$/mytest/gradebook/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seattle_jls_django.iws" />
@@ -48,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="3798">
-              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.5523466" vertical-offset="2052" max-vertical-offset="3798">
+              <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -102,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5451264" vertical-offset="130" max-vertical-offset="5922">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4612" max-vertical-offset="5922">
+              <caret line="273" column="89" selection-start-line="273" selection-start-column="89" selection-end-line="273" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -176,8 +171,8 @@
         <option value="$PROJECT_DIR$/mytest/gradebook/urls.py" />
         <option value="$PROJECT_DIR$/mytest/gradebook/templates/gradebook/students.html" />
         <option value="$PROJECT_DIR$/mytest/gradebook/views.py" />
-        <option value="$PROJECT_DIR$/mytest/gradebook/admin.py" />
         <option value="$PROJECT_DIR$/mytest/gradebook/models.py" />
+        <option value="$PROJECT_DIR$/mytest/gradebook/admin.py" />
       </list>
     </option>
   </component>
@@ -1045,7 +1040,11 @@
       <created>1409173289243</created>
       <updated>1409173289244</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="autofield primary keys in model">
+      <created>1409184902554</created>
+      <updated>1409184902554</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1111,7 +1110,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="add links to inline student enrollments under classes" />
     <MESSAGE value="change links to inline student enrollments under classes" />
     <MESSAGE value="fix typo in admin.py" />
     <MESSAGE value="add &quot;SITE_ID = 2&quot;" />
@@ -1136,7 +1134,8 @@
     <MESSAGE value="i forgot&#10;" />
     <MESSAGE value="add some import-export to admin enrollment &#10;change homepage." />
     <MESSAGE value="students.html template add" />
-    <option name="LAST_COMMIT_MESSAGE" value="students.html template add" />
+    <MESSAGE value="autofield primary keys in model" />
+    <option name="LAST_COMMIT_MESSAGE" value="autofield primary keys in model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1509,21 +1508,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
+    <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="3798">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="4612" max-vertical-offset="5922">
+          <caret line="273" column="89" selection-start-line="273" selection-start-column="89" selection-end-line="273" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mytest/gradebook/models.py">
+    <entry file="file://$PROJECT_DIR$/mytest/gradebook/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5451264" vertical-offset="130" max-vertical-offset="5922">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.5523466" vertical-offset="2052" max-vertical-offset="3798">
+          <caret line="131" column="45" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

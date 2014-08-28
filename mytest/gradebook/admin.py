@@ -134,7 +134,7 @@ class EnrollmentsAdmin(ImportExportModelAdmin):
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
-    # readonly_fields = ('enrollment_id',)
+    readonly_fields = ('enrollment_id', 'students_student_id')
     list_filter = ('classes_class_id__academic_years_academic_year_id', 'classes_class_id__teachers_teacher_id')
     resource_class = EnrollmentResource
 '''
