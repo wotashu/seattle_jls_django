@@ -24,17 +24,20 @@ class AcademicYearsAdmin(admin.ModelAdmin):
     fields = ['academic_year_id', 'academic_year_title', 'academic_year_start_date', 'academic_year_end_date']
     list_display = ('academic_year_id', 'academic_year_title', 'academic_year_start_date', 'academic_year_end_date')
     inlines = [ClassesInline]
+    readonly_fields = ('academic_year_id',)
 
 
 class AcademicQuartersAdmin(admin.ModelAdmin):
     fields = ['academic_quarter_id', 'academic_quarter_name', 'academic_quarter_start_date',
               'academic_quarter_end_date']
+    readonly_fields = ('academic_quarter_id',)
 
 
 class EnrollmentsInline(admin.TabularInline):
     model = Enrollment
+    readonly_fields = ['edit_grades', ]
     extra = 0
-    fields = ['classes_class_id', 'drop_status', 'attendance_total', 'attendance_score']
+    fields = ['classes_class_id', 'drop_status', 'attendance_total', 'attendance_score', 'edit_grades']
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
@@ -107,8 +110,9 @@ class ClassesAdmin(admin.ModelAdmin):
 
 class GradesInline(admin.TabularInline):
     model = Grade
-    extra = 1
+    extra = 10
     fields = ['assignment_types_assignment_type_id', 'grade_score']
+    max_num = 15
 
 
 class EnrollmentResource(resources.ModelResource):
