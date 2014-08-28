@@ -10,7 +10,6 @@ from import_export import resources
 
 
 class StudentResource(resources.ModelResource):
-
     class Meta:
         model = Student
 
@@ -75,18 +74,21 @@ class GradesAdmin(admin.ModelAdmin):
 class StudentEnrollmentInline(admin.TabularInline):
     readonly_fields = ['edit_grades', ]
     model = Enrollment
-    extra = 1
+    extra = 5
     # fk_name = "classes_class_id"
     fields = ['students_student_id', 'drop_status', 'attendance_total', 'attendance_score', 'notes', 'edit_grades']
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
+    # raw_id_fields = ("students_student_id",)
+    min_num = 1
+    max_num = 20
 
 
 class ClassesAdmin(admin.ModelAdmin):
-    fields = ['class_id', 'academic_years_academic_year_id', 'courses_course_id', 'class_section',
-              'teachers_teacher_id']
+    fields = ['class_id', 'academic_years_academic_year_id', 'academic_quarters_academic_quarter_id', 'courses_course_id',
+              'class_section', 'teachers_teacher_id']
     list_display = ('class_id', 'academic_years_academic_year_id', 'academic_quarters_academic_quarter_id',
                     'courses_course_id', 'class_section', 'teachers_teacher_id')
     search_fields = ['academic_quarters_academic_quarter_id__academic_quarter_name',
@@ -110,20 +112,20 @@ class GradesInline(admin.TabularInline):
 
 
 class EnrollmentResource(resources.ModelResource):
-
     class Meta:
         model = Enrollment
 
 
 class EnrollmentsAdmin(ImportExportModelAdmin):
     fieldsets = [
-        (None, {'fields': ['enrollment_id', 'classes_class_id', 'students_student_id']}),
+        (None, {'fields': ['classes_class_id',
+                           'students_student_id']}),
         ('Attendance', {'fields': ['drop_status', 'attendance_total', 'attendance_score'], 'classes': ['collapse']}),
         ('Notes', {'fields': ['notes'], 'classes': ['collapse']}),
 
     ]
     inlines = [GradesInline]
-    list_display = ('students_student_id', 'classes_class_id', 'drop_status', 'notes')
+    list_display = ('student_name', 'class_information', 'drop_status', 'notes')
     search_fields = ['students_student_id__student_last_name', 'students_student_id__student_first_name', 'notes',
                      'classes_class_id__teachers_teacher_id__teacher_last_name',
                      'classes_class_id__teachers_teacher_id__teacher_first_name',
@@ -132,9 +134,28 @@ class EnrollmentsAdmin(ImportExportModelAdmin):
         models.CharField: {'widget': TextInput(attrs={'size': '20'})},
         models.TextField: {'widget': Textarea(attrs={'rows': 2, 'cols': 40})},
     }
-    readonly_fields = ('enrollment_id',)
+    # readonly_fields = ('enrollment_id',)
     list_filter = ('classes_class_id__academic_years_academic_year_id', 'classes_class_id__teachers_teacher_id')
     resource_class = EnrollmentResource
+'''
+    def student_name(self, gradebook):
+        return "%s, %s" % (gradebook.students_student_id.student_last_name,
+                           gradebook.students_student_id.student_first_name)
+
+    student_name.short_description = 'student name'
+
+    def class_information(self, gradebook):
+        return "(%s %s) %s %s: %s, %s" % (
+            gradebook.classes_class_id.academic_years_academic_year_id,
+            gradebook.classes_class_id.academic_quarters_academic_quarter_id,
+            gradebook.classes_class_id.courses_course_id,
+            gradebook.classes_class_id.class_section,
+            gradebook.classes_class_id.teachers_teacher_id.teacher_last_name,
+            gradebook.classes_class_id.teachers_teacher_id.teacher_first_name
+        )
+
+    class_information.short_description = 'class information'
+'''
 
 
 class AddressAdmin(admin.ModelAdmin):
