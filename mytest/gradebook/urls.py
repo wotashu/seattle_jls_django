@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 # from django.views.generic.base import TemplateView
+from gradebook.views import GradeDetails
 
 from gradebook import views
 
@@ -14,6 +15,9 @@ urlpatterns = patterns('',
                        url(r'^(?P<enrollment_id>\d+)/$', views.detail, name='detail'),
                        url(r'student_list', views.student_list, name='student_list'),
                        url(r'^students/(?P<student_id>[0-9]+)/$', views.students, name='students'),
+                       url(r'^report_card/(?P<student_id>[0-9]+)/$', views.report_card, name='report_card'),
+                       url(r'^grades/(?P<slug>[-_\w]+)/$', GradeDetails.as_view(), name='grade-details'),
+                       url(r'get_grades', views.grade_list, name='get-grades'),
 )
 
 urlpatterns += staticfiles_urlpatterns()

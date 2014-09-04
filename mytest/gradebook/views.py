@@ -1,11 +1,12 @@
 from django import forms
 from django.shortcuts import render
 from django.http import Http404, HttpResponseRedirect, HttpResponse
+from django.views.generic.detail import DetailView
 from gradebook.forms import AddressForm, StudentForm
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
-from gradebook.models import Enrollment, Class, Student, Address
+from gradebook.models import Enrollment, Class, Student, Address, Grade
 
 
 class NameForm(forms.Form):
@@ -78,5 +79,31 @@ def add_address(request):
         form = AddressForm()
     return render_to_response('gradebook/add_address.html', {'form': form}, context)
 
+
+def report_card(request, student_id):
+    try:
+        student = Student.objects.get(pk=student_id)
+    except Student.DoesNotExist:
+        raise Http404
+    context = {'student': student}
+    return render(request, 'gradebook/report_card.html', context)
+
+
+class GradeDetails(DetailView):
+
+    model = Grade
+    template_name = "gradebook/grade_detail.html"
+    slug_field = 'grade_id'
+
+    def get_context_data(self, **kwargs):
+        context = super(GradeDetails, self).get_context_data(**kwargs)
+        # context['enrollment_id'] = Enrollment.enrollment_id
+        return context
+
+
+def grade_list(request):
+    get_grade_id = Grade.objects.all()
+    context = {'get_grade_id': get_grade_id}
+    return render(request, 'gradebook/get_grades.html', context)
 
 # Create your views here.

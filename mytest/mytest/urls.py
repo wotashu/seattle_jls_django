@@ -13,7 +13,6 @@ urlpatterns = patterns('',
                        url(r'^gradebook/', include('gradebook.urls', namespace="gradebook")),
                        url(r'^admin/', include(admin.site.urls)),
                        # url(r'^grappelli/', include('grappelli.urls')),  # grappelli URLS
-
 )
 
 

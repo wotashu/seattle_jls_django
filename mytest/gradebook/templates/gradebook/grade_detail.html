@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+        Grade for {{ object.enrollments_enrollment_id.students_student_id.student_first_name }}
+        {{ object.enrollments_enrollment_id.students_student_id.student_last_name }}
+    </title>
+</head>
+<body>
+<h1>{{ object.grade_id }}</h1>
+<h2>{{ object.enrollments_enrollment_id.classes_class_id }}</h2>
+<p>{{ object.enrollments_enrollment_id.students_student_id.student_last_name }},
+    {{ object.enrollments_enrollment_id.students_student_id.student_first_name }}</p>
+<table>
+    <tr>
+        <td><strong>Assignment</strong></td>
+        <td><strong>Grade</strong></td>
+    </tr>
+    <tr>
+        <td>{{ object.assignment_types_assignment_type_id }}</td>
+        <td>{{ object.grade_score }}</td>
+    </tr>
+</table>
+</body>
+</html>
