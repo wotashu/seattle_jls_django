@@ -10822,3 +10822,21 @@ Starting seattle_jls_django as webapps
 /webapps/local/lib/python2.7/site-packages/import_export/resources.py:429: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
   new_class.fields.update(SortedDict(field_list))
 
+/webapps/local/lib/python2.7/site-packages/crispy_forms/utils.py:25: RemovedInDjango19Warning: memoize wrapper is deprecated and will be removed in Django 1.9. Use django.utils.lru_cache instead.
+  default_field_template = memoize(default_field_template, {}, 1)
+
+/webapps/local/lib/python2.7/site-packages/crispy_forms/utils.py:25: RemovedInDjango19Warning: memoize wrapper is deprecated and will be removed in Django 1.9. Use django.utils.lru_cache instead.
+  default_field_template = memoize(default_field_template, {}, 1)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
+/webapps/local/lib/python2.7/site-packages/crispy_forms/utils.py:25: RemovedInDjango19Warning: memoize wrapper is deprecated and will be removed in Django 1.9. Use django.utils.lru_cache instead.
+  default_field_template = memoize(default_field_template, {}, 1)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
+/webapps/local/lib/python2.7/site-packages/django/templatetags/future.py:24: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+  RemovedInDjango19Warning)
+
