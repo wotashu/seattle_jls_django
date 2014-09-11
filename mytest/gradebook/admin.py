@@ -63,7 +63,7 @@ class TeachersAdmin(admin.ModelAdmin):
 
 
 class AssignmentTypesAdmin(admin.ModelAdmin):
-    fields = ['assignment_type_id', 'assignment_title']
+    fields = ['assignment_title']
     list_display = ('assignment_type_id', 'assignment_title')
 
 
